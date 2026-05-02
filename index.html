@@ -1,0 +1,123 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=IBM+Plex+Mono:wght@400&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .page {
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    text-align: center;
+  }
+  .wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 300;
+    color: #0a1f44;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  .sub {
+    font-size: 10px;
+    color: #8899aa;
+    letter-spacing: 0.22em;
+    margin-bottom: 60px;
+  }
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: #0a1f44;
+    margin: 0 auto 60px;
+  }
+  .contact-block {
+    text-align: left;
+    display: inline-block;
+  }
+  .contact-label {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: #0a1f44;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .contact-row {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+  .c-key {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: #8899aa;
+    min-width: 52px;
+  }
+  .c-val {
+    font-size: 12px;
+    color: #0a1f44;
+  }
+  .c-val a {
+    color: #0a1f44;
+    text-decoration: none;
+    border-bottom: 1px solid #ccd6e0;
+  }
+  .footer {
+    border-top: 1px solid #e8eef4;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+    color: #aabbcc;
+    letter-spacing: 0.1em;
+  }
+  #live-time { color: #8899aa; }
+</style>
+
+<div class="page">
+  <div class="main">
+    <div class="wordmark">CoreFinCorp</div>
+    <div class="sub">Every rupee accounted for</div>
+    <div class="divider"></div>
+    <div class="contact-block">
+      <div class="contact-label">CONTACT / REACH US</div>
+      <div class="contact-row">
+        <span class="c-key">EMAIL</span>
+        <span class="c-val"><a href="mailto:info@corefincorp.com">info@corefincorp.com</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="c-key">OFFICE</span>
+        <span class="c-val">Ambala, Haryana, India</span>
+      </div>
+      <div class="contact-row">
+        <span class="c-key">HOURS</span>
+        <span class="c-val">Mon – Sat, 09:00 – 18:30 IST</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>© 2026 COREFINCORP · AMBALA, INDIA</span>
+    <span id="live-time"></span>
+  </div>
+</div>
+
+<script>
+  function tick() {
+    const now = new Date();
+    const opts = { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+    document.getElementById('live-time').textContent = now.toLocaleTimeString('en-IN', opts) + ' IST';
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>
