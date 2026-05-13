@@ -119,14 +119,32 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,0.06);padding
 .footer-bottom p{font-size:10px;letter-spacing:0.08em;color:rgba(255,255,255,0.18)}
 #clk{font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.18)}
 
+.monogram{
+  position:fixed;
+  right:28px;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:150;
+  font-family:'EB Garamond',serif;
+  font-size:14px;
+  font-weight:400;
+  letter-spacing:0.12em;
+  color:var(--ink);
+  opacity:0.35;
+  writing-mode:vertical-rl;
+  user-select:none;
+  pointer-events:none;
+}
 @media(max-width:1100px){
   nav,.hero-body,.sec,.band,footer{padding-left:40px;padding-right:40px}
   .hero-stat{padding-left:40px}
   .wwd-intro{grid-template-columns:1fr;gap:32px}
   .band-inner,.footer-top{grid-template-columns:1fr 1fr}
 }
+  
 @media(max-width:768px){
   nav{padding:0 20px}.nav-links{display:none}
+  .monogram{display:none}
   .hero-body{padding:60px 20px}
   .hero-rule{grid-template-columns:1fr 1fr}
   .hero-stat{padding:24px 20px}
