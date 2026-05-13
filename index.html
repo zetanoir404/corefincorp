@@ -122,16 +122,19 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,0.06);padding
 .monogram{
   position:fixed;
   right:28px;
-  top:50%;
+  top:80%;
   transform:translateY(-50%);
   z-index:150;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
   font-family:'EB Garamond',serif;
-  font-size:14px;
+  font-size:35px;
   font-weight:400;
-  letter-spacing:0.12em;
+  letter-spacing:0.05em;
   color:var(--ink);
-  opacity:0.5;
-  writing-mode:vertical-rl;
+  opacity:0.60;
   user-select:none;
   pointer-events:none;
 }
@@ -160,8 +163,11 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,0.06);padding
 </head>
 <body>
 
-<div class="monogram" aria-hidden="true">CFC</div>
-  
+<div class="monogram" aria-hidden="true">
+  <span>C</span>
+  <span>F</span>
+  <span>C</span>
+</div>
 <nav>
   <a href="#" class="nav-logo">CORE<em>FIN</em>CORP</a>
   <ul class="nav-links">
