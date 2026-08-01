@@ -1,374 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CoreFinCorp | Fractional CFO &amp; Financial Advisory</title>
-<meta name="description" content="CoreFinCorp exists for one reason — to bring financial rigour, clarity, and accountability to businesses that deserve better than guesswork. Every rupee, every decision, every report. Accountable.">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="CoreFinCorp | Fractional CFO &amp; Financial Advisory">
-<meta property="og:description" content="CoreFinCorp LLP brings financial rigour and strategic clarity to businesses built to last.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --ink:#0d0d0d;
-  --ink-mid:#3a3a3a;
-  --ink-soft:#6b6b6b;
-  --ink-muted:#a0a0a0;
-  --rule:#c8c0b4;
-  --rule-light:#e8e4de;
-  --bg:#faf9f7;
-  --white:#ffffff;
-}
-html{scroll-behavior:smooth}
-body{font-family:'Libre Franklin',sans-serif;color:var(--ink);background:var(--white);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreFinCorp | Fractional CFO & Financial Advisory</title>
+  <meta name="description" content="CoreFinCorp provides fractional CFO, FP&A, and financial operations support to ambitious businesses across India.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  background:var(--white);
-  border-bottom:1px solid var(--rule-light);
-  height:62px;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 72px;
-}
-.nav-logo{font-family:'EB Garamond',serif;font-size:20px;font-weight:400;letter-spacing:0.06em;color:var(--ink);text-decoration:none}
-.nav-logo em{font-style:italic;color:var(--ink-soft)}
-.nav-links{display:flex;align-items:center;gap:44px;list-style:none}
-.nav-links a{font-size:11px;font-weight:400;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-mid);text-decoration:none;transition:color 0.15s}
-.nav-links a:hover{color:var(--ink)}
-.nav-cta{font-size:11px;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:1px;transition:opacity 0.15s}
-.nav-cta:hover{opacity:0.45}
-
-.hero{padding-top:62px;min-height:100vh;display:grid;grid-template-rows:1fr auto;background:var(--white)}
-.hero-body{display:flex;align-items:center;padding:80px 72px;border-bottom:1px solid var(--rule)}
-.hero-content{max-width:800px}
-.hero-kicker{font-size:10px;font-weight:400;letter-spacing:0.24em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:36px;display:flex;align-items:center;gap:16px}
-.hero-kicker::before{content:'';display:block;width:32px;height:1px;background:var(--rule)}
-.hero-h1{font-family:'EB Garamond',serif;font-size:clamp(50px,6vw,78px);font-weight:400;line-height:1.05;letter-spacing:-0.01em;color:var(--ink);margin-bottom:40px}
-.hero-h1 em{font-style:italic;color:var(--ink-soft)}
-.hero-p{font-size:15px;font-weight:300;color:var(--ink-soft);max-width:540px;line-height:1.85;margin-bottom:52px;border-left:1px solid var(--rule);padding-left:24px}
-.hero-actions{display:flex;align-items:center;gap:40px}
-.btn-dark{background:var(--ink);color:var(--white);font-size:10px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;padding:13px 32px;transition:opacity 0.15s;display:inline-block}
-.btn-dark:hover{opacity:0.75}
-.btn-text{font-size:10px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;display:flex;align-items:center;gap:8px;transition:color 0.15s}
-.btn-text:hover{color:var(--ink)}
-.hero-rule{display:grid;grid-template-columns:repeat(4,1fr)}
-.hero-stat{padding:30px 40px 30px 72px;border-right:1px solid var(--rule-light)}
-.hero-stat:last-child{border-right:none}
-.stat-n{font-family:'EB Garamond',serif;font-size:34px;font-weight:400;color:var(--ink);line-height:1;margin-bottom:5px}
-.stat-l{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-muted)}
-
-.sec{padding:96px 72px}
-.sec-alt{background:var(--bg)}
-.sec-label{font-size:10px;font-weight:400;letter-spacing:0.24em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:20px;display:flex;align-items:center;gap:16px}
-.sec-label::before{content:'';display:block;width:24px;height:1px;background:var(--rule)}
-.sec-h{font-family:'EB Garamond',serif;font-size:clamp(34px,4vw,50px);font-weight:400;line-height:1.12;letter-spacing:-0.005em;color:var(--ink);margin-bottom:16px}
-.sec-sub{font-size:14px;font-weight:300;color:var(--ink-soft);max-width:540px;line-height:1.85}
-
-.wwd-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:72px;padding-bottom:48px;border-bottom:1px solid var(--rule-light)}
-.services-table{width:100%;border-collapse:collapse}
-.services-table thead tr{border-bottom:1px solid var(--rule)}
-.services-table thead th{font-size:9px;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-muted);padding:0 0 16px;text-align:left}
-.services-table thead th:not(:first-child){padding-left:32px}
-.service-row{border-bottom:1px solid var(--rule-light)}
-.service-row td{padding:30px 0;vertical-align:top}
-.service-row td:not(:first-child){padding-left:32px}
-.sr-num{font-family:'EB Garamond',serif;font-size:13px;color:var(--ink-muted);white-space:nowrap;padding-top:3px;min-width:36px}
-.sr-name{font-family:'EB Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);line-height:1.2;min-width:200px}
-.sr-desc{font-size:13px;font-weight:300;color:var(--ink-soft);line-height:1.75;max-width:280px}
-.sr-list{list-style:none}
-.sr-list li{font-size:12px;font-weight:300;color:var(--ink-soft);padding:4px 0;display:flex;align-items:flex-start;gap:10px;line-height:1.6}
-.sr-list li::before{content:'—';color:var(--rule);flex-shrink:0;font-size:11px;margin-top:1px}
-.sr-link{font-size:10px;font-weight:400;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;white-space:nowrap;border-bottom:1px solid var(--rule-light);padding-bottom:1px;transition:color 0.15s,border-color 0.15s}
-.sr-link:hover{color:var(--ink);border-color:var(--rule)}
-
-.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:64px;border-top:1px solid var(--rule)}
-.principle{padding:48px 40px 48px 0;border-right:1px solid var(--rule-light)}
-.principle:last-child,.principle:nth-child(3){border-right:none;padding-right:0}
-.principle:nth-child(4),.principle:nth-child(5),.principle:nth-child(6){border-top:1px solid var(--rule-light)}
-.p-num{font-family:'EB Garamond',serif;font-size:13px;color:var(--ink-muted);margin-bottom:28px;font-style:italic}
-.p-title{font-family:'EB Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);margin-bottom:16px;line-height:1.2}
-.p-body{font-size:13px;font-weight:300;color:var(--ink-soft);line-height:1.85}
-
-.band{background:var(--ink);padding:96px 72px}
-.band-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.band-h{font-family:'EB Garamond',serif;font-size:clamp(36px,4vw,54px);font-weight:400;line-height:1.08;color:var(--white);letter-spacing:-0.005em}
-.band-h em{font-style:italic;color:rgba(255,255,255,0.5)}
-.band-right p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.55);line-height:1.85;margin-bottom:36px}
-.btn-white{background:var(--white);color:var(--ink);font-size:10px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;padding:13px 32px;transition:opacity 0.15s;display:inline-block}
-.btn-white:hover{opacity:0.82}
-
-footer{background:var(--ink);border-top:1px solid rgba(255,255,255,0.06);padding:72px 72px 36px}
-.footer-top{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:60px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:32px}
-.f-brand{font-family:'EB Garamond',serif;font-size:22px;font-weight:400;letter-spacing:0.04em;color:var(--white);margin-bottom:6px}
-.f-brand em{font-style:italic;color:rgba(255,255,255,0.4)}
-.f-tagline{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:24px}
-.f-about{font-size:13px;font-weight:300;color:rgba(255,255,255,0.42);line-height:1.85;max-width:300px}
-.f-col-h{font-size:9px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:20px}
-.f-col ul{list-style:none}
-.f-col ul li{margin-bottom:11px}
-.f-col ul li a{font-size:12px;font-weight:300;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.15s}
-.f-col ul li a:hover{color:var(--white)}
-.f-row{display:flex;gap:14px;margin-bottom:11px}
-.f-row span:first-child{font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.22);min-width:48px;padding-top:1px}
-.f-row span:last-child{font-size:12px;font-weight:300;color:rgba(255,255,255,0.5)}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center}
-.footer-bottom p{font-size:10px;letter-spacing:0.08em;color:rgba(255,255,255,0.18)}
-#clk{font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.18)}
-
-.monogram{
-  position:fixed;
-  right:28px;
-  top:80%;
-  transform:translateY(-50%);
-  z-index:150;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:4px;
-  font-family:'EB Garamond',serif;
-  font-size:35px;
-  font-weight:400;
-  letter-spacing:0.05em;
-  color:var(--ink);
-  opacity:0.60;
-  user-select:none;
-  pointer-events:none;
-}
-@media(max-width:1100px){
-  nav,.hero-body,.sec,.band,footer{padding-left:40px;padding-right:40px}
-  .hero-stat{padding-left:40px}
-  .wwd-intro{grid-template-columns:1fr;gap:32px}
-  .band-inner,.footer-top{grid-template-columns:1fr 1fr}
-}
-  
-@media(max-width:768px){
-  nav{padding:0 20px}.nav-links{display:none}
-  .monogram{display:none}
-  .hero-body{padding:60px 20px}
-  .hero-rule{grid-template-columns:1fr 1fr}
-  .hero-stat{padding:24px 20px}
-  .sec,.band,footer{padding-left:20px;padding-right:20px}
-  .principles-grid,.band-inner,.footer-top{grid-template-columns:1fr}
-  .principle{border-right:none;border-bottom:1px solid var(--rule-light);padding-right:0;padding-bottom:36px}
-  .principle:nth-child(3){border-bottom:1px solid var(--rule-light)}
-  .principle:last-child{border-bottom:none}
-  .footer-bottom{flex-direction:column;gap:10px;text-align:center}
-  .services-table thead th:nth-child(3),.service-row td:nth-child(3){display:none}
-}
-</style>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --font:'EB Garamond',Georgia,'Times New Roman',serif;
+      --ink:#0d0d0d;
+      --ink-mid:#3a3a3a;
+      --ink-soft:#6b6b6b;
+      --ink-muted:#99938b;
+      --rule:#c8c0b4;
+      --rule-light:#e8e4de;
+      --bg:#faf9f7;
+      --white:#fff;
+      --button-soft:#eee9e1;
+      --button-hover:#e3dbd0;
+    }
+    html{scroll-behavior:smooth}
+    body,button,input,select,textarea{font-family:var(--font)}
+    body{background:var(--white);color:var(--ink);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    button,input,select,textarea{font-size:inherit}
+    .skip-link{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--white);padding:8px 16px;z-index:300}
+    .skip-link:focus{left:8px}
+    nav{position:fixed;inset:0 0 auto;z-index:200;height:64px;padding:0 72px;background:var(--white);border-bottom:1px solid var(--rule-light);display:flex;align-items:center;justify-content:space-between}
+    .nav-logo,.f-brand{font-size:23px;letter-spacing:.06em;text-decoration:none}
+    .nav-logo em,.f-brand em{font-style:italic;color:var(--ink-soft)}
+    .nav-links{display:flex;align-items:center;gap:38px;list-style:none}
+    .nav-links a,.nav-cta,.btn-dark,.btn-text,.btn-submit,.sr-link{font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+    .nav-links a,.nav-cta{color:var(--ink-mid)}
+    .nav-links a:hover,.nav-cta:hover{color:var(--ink)}
+    .nav-cta{border-bottom:1px solid var(--ink);padding-bottom:2px}
+    .menu-toggle{display:none;border:0;background:none;color:var(--ink);font-size:25px;cursor:pointer}
+    .hero{padding-top:64px;min-height:100vh;display:grid;grid-template-rows:1fr auto}
+    .hero-body{display:flex;align-items:center;padding:80px 72px;border-bottom:1px solid var(--rule)}
+    .hero-content{max-width:850px}
+    .kicker,.sec-label,.f-col-h{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted)}
+    .kicker,.sec-label{display:flex;align-items:center;gap:14px;margin-bottom:25px}
+    .kicker::before,.sec-label::before{content:"";width:28px;height:1px;background:var(--rule)}
+    .hero-h1,.sec-h,.band-h,.sr-name,.p-title,.stat-n{font-weight:400}
+    .hero-h1{font-size:clamp(58px,7vw,90px);line-height:.98;letter-spacing:-.02em;margin-bottom:40px}
+    .hero-h1 em,.band-h em{font-style:italic;color:var(--ink-soft)}
+    .hero-p{max-width:570px;margin-bottom:45px;padding-left:24px;border-left:1px solid var(--rule);color:var(--ink-soft);font-size:18px;line-height:1.7}
+    .hero-actions{display:flex;align-items:center;gap:30px}
+    .btn-dark{display:inline-block;padding:13px 28px;background:var(--ink);color:var(--white);transition:opacity .2s}
+    .btn-dark:hover{opacity:.75}
+    .btn-text{display:flex;align-items:center;gap:8px;color:var(--ink-soft)}
+    .btn-text:hover{color:var(--ink)}
+    .hero-rule{display:grid;grid-template-columns:repeat(4,1fr)}
+    .hero-stat{padding:28px 35px 28px 72px;border-right:1px solid var(--rule-light)}
+    .hero-stat:last-child{border-right:0}
+    .stat-n{font-size:38px;line-height:1;margin-bottom:5px}
+    .stat-l{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-muted)}
+    .sec{padding:96px 72px}
+    .sec-alt{background:var(--bg)}
+    .wwd-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:70px;padding-bottom:48px;border-bottom:1px solid var(--rule-light)}
+    .sec-h{font-size:clamp(42px,5vw,62px);line-height:1.05;margin-bottom:15px}
+    .sec-sub{max-width:580px;color:var(--ink-soft);font-size:18px;line-height:1.7}
+    .services-table{width:100%;border-collapse:collapse}
+    .services-table th{padding-bottom:16px;border-bottom:1px solid var(--rule);font-size:12px;letter-spacing:.15em;text-align:left;text-transform:uppercase;color:var(--ink-muted)}
+    .services-table th:not(:first-child),.service-row td:not(:first-child){padding-left:28px}
+    .service-row{border-bottom:1px solid var(--rule-light)}
+    .service-row td{padding:30px 0;vertical-align:top}
+    .sr-num,.p-num{color:var(--ink-muted);font-style:italic}
+    .sr-num{font-size:16px;white-space:nowrap}
+    .sr-name{font-size:28px;line-height:1.05;min-width:190px}
+    .sr-desc{max-width:280px;color:var(--ink-soft);font-size:16px;line-height:1.6}
+    .sr-list{list-style:none}
+    .sr-list li{display:flex;gap:9px;padding:3px 0;color:var(--ink-soft);font-size:15px;line-height:1.45}
+    .sr-list li::before{content:"—";color:var(--rule)}
+    .sr-link{white-space:nowrap;color:var(--ink-soft);border-bottom:1px solid var(--rule-light)}
+    .sr-link:hover{color:var(--ink);border-color:var(--rule)}
+    .principles-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:62px;border-top:1px solid var(--rule)}
+    .principle{padding:40px 40px 40px 0;border-right:1px solid var(--rule-light)}
+    .principle:nth-child(3n){border-right:0;padding-right:0}
+    .principle:nth-child(n+4){border-top:1px solid var(--rule-light)}
+    .p-num{margin-bottom:23px;font-size:17px}
+    .p-title{margin-bottom:12px;font-size:28px;line-height:1.1}
+    .p-body{color:var(--ink-soft);font-size:16px;line-height:1.65}
+    .band{padding:90px 72px;background:var(--ink);color:var(--white)}
+    .band-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .band-h{font-size:clamp(44px,5vw,68px);line-height:1.02}
+    .band-h em{color:rgba(255,255,255,.5)}
+    .band-right p{margin-bottom:30px;color:rgba(255,255,255,.6);font-size:18px;line-height:1.7}
+    .btn-white{display:inline-block;padding:13px 28px;background:var(--white);color:var(--ink);font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+    .contact{background:var(--bg)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    .enquiry-form{display:grid;gap:17px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+    .form-field{display:grid;gap:6px}
+    .form-field label{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+    .form-field input,.form-field select,.form-field textarea{width:100%;padding:11px 13px;border:1px solid var(--rule-light);border-radius:0;background:var(--white);color:var(--ink);outline:none}
+    .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--ink)}
+    .form-field textarea{min-height:115px;resize:vertical}
+    .btn-submit{justify-self:start;padding:13px 28px;border:1px solid var(--rule);background:var(--button-soft);color:var(--ink);cursor:pointer;transition:background .2s,border-color .2s}
+    .btn-submit:hover{background:var(--button-hover);border-color:var(--rule)}
+    .form-status{min-height:24px;color:var(--ink-soft);font-size:15px}
+    footer{padding:70px 72px 32px;background:var(--ink);color:var(--white)}
+    .footer-top{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:55px;padding-bottom:55px;border-bottom:1px solid rgba(255,255,255,.1)}
+    .f-brand{margin-bottom:5px}
+    .f-brand em{color:rgba(255,255,255,.45)}
+    .f-tagline,.f-col-h{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.32)}
+    .f-tagline{margin-bottom:20px}
+    .f-about,.f-col a,.f-row span:last-child{color:rgba(255,255,255,.52);font-size:16px}
+    .f-about{max-width:310px;line-height:1.65}
+    .f-col-h{margin-bottom:17px}
+    .f-col ul{list-style:none}
+    .f-col li{margin-bottom:8px}
+    .f-col a{text-decoration:none}
+    .f-col a:hover{color:var(--white)}
+    .f-row{display:flex;gap:12px;margin-bottom:9px}
+    .f-row span:first-child{min-width:48px;color:rgba(255,255,255,.3);font-size:13px;text-transform:uppercase}
+    .footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:27px;color:rgba(255,255,255,.3);font-size:14px}
+    #clk{letter-spacing:.08em}
+    .monogram{position:fixed;right:28px;top:80%;z-index:150;display:flex;flex-direction:column;gap:0;color:var(--ink);font-size:38px;line-height:.8;opacity:.55;pointer-events:none}
+    @media(max-width:1100px){
+      nav,.hero-body,.sec,.band,footer{padding-left:40px;padding-right:40px}
+      .hero-stat{padding-left:40px}
+      .wwd-intro,.contact-grid,.band-inner{grid-template-columns:1fr;gap:35px}
+      .footer-top{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:768px){
+      nav{padding:0 20px}
+      .nav-links{position:absolute;top:64px;left:0;right:0;display:none;flex-direction:column;align-items:flex-start;gap:18px;padding:24px 20px;background:var(--white);border-bottom:1px solid var(--rule-light)}
+      .nav-links.open{display:flex}
+      .menu-toggle{display:block}
+      .monogram{display:none}
+      .hero-body{padding:60px 20px}
+      .hero-h1{font-size:clamp(52px,16vw,78px)}
+      .hero-p{font-size:17px}
+      .hero-rule{grid-template-columns:1fr 1fr}
+      .hero-stat{padding:22px 20px}
+      .sec,.band,footer{padding-left:20px;padding-right:20px}
+      .principles-grid,.footer-top{grid-template-columns:1fr}
+      .principle,.principle:nth-child(3n){border-right:0;border-bottom:1px solid var(--rule-light);padding:34px 0}
+      .principle:last-child{border-bottom:0}
+      .principle:nth-child(n+4){border-top:0}
+      .services-table,.services-table tbody,.service-row,.service-row td{display:block}
+      .services-table thead{display:none}
+      .service-row{padding:26px 0}
+      .service-row td{padding:5px 0}
+      .service-row td:not(:first-child){padding-left:0}
+      .sr-name{margin:8px 0 12px}
+      .sr-desc{max-width:none;margin-bottom:10px}
+      .service-row td:last-child{text-align:left!important;margin-top:12px}
+      .form-row{grid-template-columns:1fr}
+      .footer-bottom{flex-direction:column;text-align:center;align-items:center}
+    }
+  </style>
 </head>
+
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<div class="monogram" aria-hidden="true">
-  <span>C</span>
-  <span>F</span>
-  <span>C</span>
-</div>
-<nav>
-  <a href="#" class="nav-logo">CORE<em>FIN</em>CORP</a>
-  <ul class="nav-links">
-    <li><a href="#what-we-do">Advisory</a></li>
-    <li><a href="#principles">Our Approach</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="mailto:info@corefincorp.com" class="nav-cta">Arrange a Meeting</a></li>
-  </ul>
-</nav>
+  <div class="monogram" aria-hidden="true">
+    <span>C</span><span>F</span><span>C</span>
+  </div>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="hero-content">
-      <p class="hero-kicker">Fractional CFO &amp; Financial Advisory</p>
-      <h1 class="hero-h1">Financial leadership<br>for <em>ambitious</em><br>businesses.</h1>
-      <p class="hero-p">CoreFinCorp exists for one reason — to bring financial rigour, clarity, and accountability to businesses that deserve better than guesswork. Every rupee, every decision, every report. Accountable.</p>
-      <div class="hero-actions">
-        <a href="mailto:info@corefincorp.com" class="btn-dark">Arrange a Meeting</a>
-        <a href="#what-we-do" class="btn-text">Our Services &nbsp;&#8594;</a>
+  <nav aria-label="Main navigation">
+    <a href="#" class="nav-logo">CORE<em>FIN</em>CORP</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#what-we-do">Advisory</a></li>
+      <li><a href="#principles">Our Approach</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Arrange a Meeting</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="hero-content">
+          <p class="kicker">Fractional CFO & Financial Advisory</p>
+          <h1 class="hero-h1">Financial leadership<br>for <em>ambitious</em><br>businesses.</h1>
+          <p class="hero-p">CoreFinCorp exists for one reason — to bring financial rigour, clarity, and accountability to businesses that deserve better than guesswork. Every rupee, every decision, every report. Accountable.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-dark">Arrange a Meeting</a>
+            <a href="#what-we-do" class="btn-text">Our Services →</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="hero-rule">
-    <div class="hero-stat">
-      <div class="stat-n">CFO</div>
-      <div class="stat-l">Dedicated expertise</div>
-    </div>
-    <div class="hero-stat">
-      <div class="stat-n">FP&amp;A</div>
-      <div class="stat-l">Planning &amp; analysis</div>
-    </div>
-    <div class="hero-stat">
-      <div class="stat-n">360°</div>
-      <div class="stat-l">Finance coverage</div>
-    </div>
-    <div class="hero-stat">
-      <div class="stat-n">Day&thinsp;1</div>
-      <div class="stat-l">Focused practice</div>
-    </div>
-  </div>
-</section>
 
-<section class="sec" id="what-we-do">
-  <div class="wwd-intro">
-    <div>
-      <p class="sec-label">Advisory Services</p>
-      <h2 class="sec-h">What we do</h2>
-    </div>
-    <p class="sec-sub">We embed with your leadership team as a strategic finance partner — bringing the discipline, foresight, and communication rigour of an experienced CFO to businesses at every stage of growth.</p>
-  </div>
-  <table class="services-table">
-    <thead>
-      <tr>
-        <th style="width:36px"></th>
-        <th>Service</th>
-        <th>Description</th>
-        <th>Scope</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="service-row">
-        <td class="sr-num">01</td>
-        <td class="sr-name">Fractional<br>CFO Advisory</td>
-        <td class="sr-desc">Senior financial leadership on a fractional basis — strategy, cash, risk, and stakeholder relations without the full-time overhead.</td>
-        <td>
-          <ul class="sr-list">
-            <li>Strategic business planning &amp; goal alignment</li>
-            <li>Capital structure &amp; cash management</li>
-            <li>Risk identification &amp; mitigation</li>
-            <li>Pricing strategy</li>
-            <li>Stakeholder, investor &amp; board communication</li>
-            <li>Fundraising support</li>
-            <li>Monthly or quarterly board reporting</li>
-          </ul>
-        </td>
-        <td style="text-align:right;vertical-align:middle"><a href="mailto:info@corefincorp.com" class="sr-link">Enquire</a></td>
-      </tr>
-      <tr class="service-row">
-        <td class="sr-num">02</td>
-        <td class="sr-name">FP&amp;A<br>Services</td>
-        <td class="sr-desc">Rigorous financial planning, forecasting, and analysis that turns your numbers into decisions.</td>
-        <td>
-          <ul class="sr-list">
-            <li>Budgeting, forecasting &amp; variance analysis</li>
-            <li>Financial modelling &amp; scenario planning</li>
-            <li>Cash flow &amp; runway management</li>
-            <li>KPI design, dashboards &amp; reporting</li>
-            <li>Investor &amp; board reporting packs</li>
-            <li>Month-end management accounts</li>
-          </ul>
-        </td>
-        <td style="text-align:right;vertical-align:middle"><a href="mailto:info@corefincorp.com" class="sr-link">Enquire</a></td>
-      </tr>
-      <tr class="service-row" style="border-bottom:none">
-        <td class="sr-num">03</td>
-        <td class="sr-name">Financial<br>Operations</td>
-        <td class="sr-desc">Audit-ready, insight-driven bookkeeping — not just compliance, but the financial foundation every scaling business needs.</td>
-        <td>
-          <ul class="sr-list">
-            <li>Categorised &amp; reconciled transactions</li>
-            <li>AP/AR oversight &amp; cash flow optimisation</li>
-            <li>Payroll recording &amp; cost allocation</li>
-            <li>GST compliance support</li>
-            <li>Tally, Zoho &amp; QuickBooks integration</li>
-            <li>Audit-ready documentation</li>
-          </ul>
-        </td>
-        <td style="text-align:right;vertical-align:middle"><a href="mailto:info@corefincorp.com" class="sr-link">Enquire</a></td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+      <div class="hero-rule">
+        <div class="hero-stat"><div class="stat-n">CFO</div><div class="stat-l">Dedicated expertise</div></div>
+        <div class="hero-stat"><div class="stat-n">FP&A</div><div class="stat-l">Planning & analysis</div></div>
+        <div class="hero-stat"><div class="stat-n">360°</div><div class="stat-l">Finance coverage</div></div>
+        <div class="hero-stat"><div class="stat-n">Day 1</div><div class="stat-l">Focused practice</div></div>
+      </div>
+    </section>
 
-<section class="sec sec-alt" id="principles">
-  <p class="sec-label">Our Approach</p>
-  <h2 class="sec-h">How we work</h2>
-  <p class="sec-sub">We do not believe in generic advice or templated deliverables. Every engagement is built around the specific needs, stage, and ambitions of your business.</p>
-  <div class="principles-grid">
-    <div class="principle">
-      <p class="p-num">I</p>
-      <h3 class="p-title">Rigour as a standard</h3>
-      <p class="p-body">We apply institutional-grade financial discipline to every engagement — the same analytical standards demanded by investment committees and boards, brought to your P&amp;L, forecasts, and decisions.</p>
-    </div>
-    <div class="principle">
-      <p class="p-num">II</p>
-      <h3 class="p-title">Embedded partnership</h3>
-      <p class="p-body">We work inside your business, not around it. That means understanding your model, your stakeholders, and your constraints — so our advice is grounded in operational reality, not abstraction.</p>
-    </div>
-    <div class="principle">
-      <p class="p-num">III</p>
-      <h3 class="p-title">Clarity of communication</h3>
-      <p class="p-body">Finance should be a tool for decision-making, not a barrier to it. We translate complex financial data into clear, actionable narratives for founders, boards, and investors.</p>
-    </div>
-    <div class="principle">
-      <p class="p-num">IV</p>
-      <h3 class="p-title">Accountability, always</h3>
-      <p class="p-body">Every engagement has a named lead, defined scope, and a clear line of accountability. No handoffs, no vague retainers, no excuses — just committed, trackable delivery.</p>
-    </div>
-    <div class="principle">
-      <p class="p-num">V</p>
-      <h3 class="p-title">Right-sized engagement</h3>
-      <p class="p-body">Whether you need 8 hours a month or a near-full-time finance lead, we scale precisely to your stage and budget. No fixed overhead, no minimum headcount.</p>
-    </div>
-    <div class="principle">
-      <p class="p-num">VI</p>
-      <h3 class="p-title">Every rupee accounted for</h3>
-      <p class="p-body">Our founding principle. We bring the precision of a listed company's finance function to every business we serve — because every business deserves to know exactly where it stands.</p>
-    </div>
-  </div>
-</section>
+    <section class="sec" id="what-we-do">
+      <div class="wwd-intro">
+        <div>
+          <p class="sec-label">Advisory Services</p>
+          <h2 class="sec-h">What we do</h2>
+        </div>
+        <p class="sec-sub">We embed with your leadership team as a strategic finance partner — bringing the discipline, foresight, and communication rigour of an experienced CFO to businesses at every stage of growth.</p>
+      </div>
 
-<div class="band">
-  <div class="band-inner">
-    <h2 class="band-h">The financial clarity<br>your business<br><em>has been missing.</em></h2>
-    <div class="band-right">
-      <p>Most growing businesses in India operate without a senior finance voice at the table. That gap costs more than you realise — in capital structure, pricing mistakes, poor cash visibility, and missed opportunities. CoreFinCorp exists to close it.</p>
-      <a href="mailto:info@corefincorp.com" class="btn-white">Speak with our team</a>
-    </div>
-  </div>
-</div>
+      <table class="services-table">
+        <thead>
+          <tr><th></th><th>Service</th><th>Description</th><th>Scope</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr class="service-row">
+            <td class="sr-num">01</td>
+            <td class="sr-name">Fractional<br>CFO Advisory</td>
+            <td class="sr-desc">Senior financial leadership on a fractional basis — strategy, cash, risk, and stakeholder relations without the full-time overhead.</td>
+            <td><ul class="sr-list"><li>Strategic business planning</li><li>Capital structure and cash management</li><li>Risk identification and mitigation</li><li>Pricing strategy</li><li>Investor and board communication</li><li>Fundraising support</li></ul></td>
+            <td><a href="#contact" class="sr-link">Enquire</a></td>
+          </tr>
+          <tr class="service-row">
+            <td class="sr-num">02</td>
+            <td class="sr-name">FP&A<br>Services</td>
+            <td class="sr-desc">Rigorous financial planning, forecasting, and analysis that turns your numbers into decisions.</td>
+            <td><ul class="sr-list"><li>Budgeting and forecasting</li><li>Financial modelling and scenario planning</li><li>Cash flow and runway management</li><li>KPI design and reporting</li><li>Investor and board reporting packs</li><li>Month-end management accounts</li></ul></td>
+            <td><a href="#contact" class="sr-link">Enquire</a></td>
+          </tr>
+          <tr class="service-row">
+            <td class="sr-num">03</td>
+            <td class="sr-name">Financial<br>Operations</td>
+            <td class="sr-desc">Audit-ready, insight-driven bookkeeping — not just compliance, but the financial foundation every scaling business needs.</td>
+            <td><ul class="sr-list"><li>Categorised and reconciled transactions</li><li>AP and AR oversight</li><li>Payroll recording and cost allocation</li><li>GST compliance support</li><li>Accounting-system integration</li><li>Audit-ready documentation</li></ul></td>
+            <td><a href="#contact" class="sr-link">Enquire</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-<footer id="contact">
-  <div class="footer-top">
-    <div>
-      <div class="f-brand">CORE<em>FIN</em>CORP</div>
-      <div class="f-tagline">Every rupee accounted for</div>
-      <p class="f-about">A fractional CFO and financial advisory firm providing strategic financial leadership to ambitious businesses across India.</p>
-    </div>
-    <div class="f-col">
-      <p class="f-col-h">Services</p>
-      <ul>
-        <li><a href="#what-we-do">Fractional CFO Advisory</a></li>
-        <li><a href="#what-we-do">FP&amp;A Services</a></li>
-        <li><a href="#what-we-do">Financial Operations</a></li>
-      </ul>
-    </div>
-    <div class="f-col">
-      <p class="f-col-h">Navigate</p>
-      <ul>
-        <li><a href="#what-we-do">Advisory</a></li>
-        <li><a href="#principles">Our Approach</a></li>
-        <li><a href="mailto:info@corefincorp.com">Contact</a></li>
-      </ul>
-    </div>
-    <div class="f-col">
-      <p class="f-col-h">Contact</p>
-      <div class="f-row"><span>Email</span><span><a href="mailto:info@corefincorp.com" style="color:rgba(255,255,255,0.5);text-decoration:none">info@corefincorp.com</a></span></div>
-      <div class="f-row"><span>Office</span><span>Ambala, Haryana, India</span></div>
-      <div class="f-row"><span>Hours</span><span>Mon – Sat, 09:00 – 18:30 IST</span></div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 CoreFinCorp &nbsp;&middot;&nbsp; Ambala, Haryana, India</p>
-    <span id="clk" aria-hidden="true" style="user-select:none"></span>
-  </div>
-</footer>
+    <section class="sec sec-alt" id="principles">
+      <p class="sec-label">Our Approach</p>
+      <h2 class="sec-h">How we work</h2>
+      <p class="sec-sub">We do not believe in generic advice or templated deliverables. Every engagement is built around the specific needs, stage, and ambitions of your business.</p>
 
-<script>
-function tick(){var t=new Date().toLocaleTimeString('en-IN',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});document.getElementById('clk').textContent=t+' IST'}
-tick();setInterval(tick,1000);
-</script>
+      <div class="principles-grid">
+        <article class="principle"><p class="p-num">I</p><h3 class="p-title">Rigour as a standard</h3><p class="p-body">We apply institutional-grade financial discipline to every engagement — the same analytical standards demanded by investment committees and boards, brought to your P&L, forecasts, and decisions.</p></article>
+        <article class="principle"><p class="p-num">II</p><h3 class="p-title">Embedded partnership</h3><p class="p-body">We work inside your business, not around it. That means understanding your model, stakeholders, and constraints so our advice is grounded in operational reality.</p></article>
+        <article class="principle"><p class="p-num">III</p><h3 class="p-title">Clarity of communication</h3><p class="p-body">Finance should be a tool for decision-making, not a barrier to it. We translate complex financial data into clear, actionable narratives.</p></article>
+        <article class="principle"><p class="p-num">IV</p><h3 class="p-title">Accountability, always</h3><p class="p-body">Every engagement has a named lead, defined scope, and clear accountability. No vague retainers, no handoffs, and no excuses.</p></article>
+        <article class="principle"><p class="p-num">V</p><h3 class="p-title">Right-sized engagement</h3><p class="p-body">Whether you need eight hours a month or a near-full-time finance lead, we scale precisely to your stage and budget.</p></article>
+        <article class="principle"><p class="p-num">VI</p><h3 class="p-title">Every rupee accounted for</h3><p class="p-body">We bring the precision of a listed company’s finance function to every business we serve because every business deserves to know exactly where it stands.</p></article>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="band-inner">
+        <h2 class="band-h">The financial clarity<br>your business<br><em>has been missing.</em></h2>
+        <div class="band-right">
+          <p>Most growing businesses operate without a senior finance voice at the table. That gap costs more than you realise — in capital structure, pricing mistakes, poor cash visibility, and missed opportunities. CoreFinCorp exists to close it.</p>
+          <a href="#contact" class="btn-white">Speak with our team</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec contact" id="contact">
+      <div class="contact-grid">
+        <div>
+          <p class="sec-label">Start a conversation</p>
+          <h2 class="sec-h">Prepare an enquiry</h2>
+          <p class="sec-sub">Tell us a little about your business and where financial leadership could create the greatest impact.</p>
+        </div>
+
+        <form class="enquiry-form" id="enquiry-form" novalidate>
+          <div class="form-row">
+            <div class="form-field"><label for="name">Name</label><input id="name" name="name" required></div>
+            <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-field"><label for="company">Company</label><input id="company" name="company"></div>
+            <div class="form-field"><label for="service">Area of interest</label><select id="service" name="service"><option value="">Select one</option><option>Fractional CFO Advisory</option><option>FP&A Services</option><option>Financial Operations</option></select></div>
+          </div>
+          <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+          <button class="btn-submit" type="submit">Prepare enquiry</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="f-brand">CORE<em>FIN</em>CORP</div>
+        <div class="f-tagline">Every rupee accounted for</div>
+        <p class="f-about">A fractional CFO and financial advisory firm providing strategic financial leadership to ambitious businesses across India.</p>
+      </div>
+      <div class="f-col"><p class="f-col-h">Services</p><ul><li><a href="#what-we-do">Fractional CFO Advisory</a></li><li><a href="#what-we-do">FP&A Services</a></li><li><a href="#what-we-do">Financial Operations</a></li></ul></div>
+      <div class="f-col"><p class="f-col-h">Navigate</p><ul><li><a href="#what-we-do">Advisory</a></li><li><a href="#principles">Our Approach</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div class="f-col"><p class="f-col-h">Contact</p><div class="f-row"><span>Email</span><span>info@corefincorp.com</span></div><div class="f-row"><span>Office</span><span>Ambala, Haryana, India</span></div><div class="f-row"><span>Hours</span><span>Mon – Sat, 09:00 – 18:30 IST</span></div></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 CoreFinCorp · Ambala, Haryana, India</p><span id="clk" aria-hidden="true"></span></div>
+  </footer>
+
+  <script>
+    const menuToggle=document.querySelector('.menu-toggle');
+    const navLinks=document.querySelector('.nav-links');
+    const form=document.querySelector('#enquiry-form');
+    const formStatus=document.querySelector('#form-status');
+
+    menuToggle.addEventListener('click',()=>{
+      const open=navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded',open);
+    });
+
+    navLinks.querySelectorAll('a').forEach(link=>{
+      link.addEventListener('click',()=>navLinks.classList.remove('open'));
+    });
+
+    form.addEventListener('submit',event=>{
+      event.preventDefault();
+      if(!form.checkValidity()){
+        formStatus.textContent='Please complete the required fields.';
+        return;
+      }
+      const data=new FormData(form);
+      const subject=encodeURIComponent(`CoreFinCorp enquiry from ${data.get('name')}`);
+      const body=encodeURIComponent(`Name: ${data.get('name')}\nEmail: ${data.get('email')}\nCompany: ${data.get('company')}\nArea: ${data.get('service')}\n\n${data.get('message')}`);
+      formStatus.textContent='Opening your email client…';
+      window.location.href=`mailto:info@corefincorp.com?subject=${subject}&body=${body}`;
+    });
+
+    function tick(){
+      const time=new Date().toLocaleTimeString('en-IN',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+      document.querySelector('#clk').textContent=`${time} IST`;
+    }
+    tick();
+    setInterval(tick,1000);
+  </script>
 </body>
 </html>
