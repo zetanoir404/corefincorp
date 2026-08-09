@@ -1,22 +1,37 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>CoreFinCorp | Fractional CFO &amp; Financial Advisory</title>
-  <meta name="description" content="CoreFinCorp brings financial rigour, clarity, and accountability to ambitious businesses across India.">
+
+  <meta
+    name="description"
+    content="CoreFinCorp brings financial rigour, clarity, and accountability to ambitious businesses across India."
+  >
   <meta name="robots" content="index, follow">
+
   <meta property="og:title" content="CoreFinCorp | Fractional CFO &amp; Financial Advisory">
-  <meta property="og:description" content="Strategic financial leadership for businesses built to last.">
+  <meta
+    property="og:description"
+    content="Strategic financial leadership for businesses built to last."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    *,*::before,*::after{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
     :root{
       --ink:#0d0d0d;
@@ -29,7 +44,9 @@
       --white:#ffffff;
     }
 
-    html{scroll-behavior:smooth}
+    html{
+      scroll-behavior:smooth;
+    }
 
     body{
       background:var(--white);
@@ -40,7 +57,9 @@
       -webkit-font-smoothing:antialiased;
     }
 
-    a{color:inherit}
+    a{
+      color:inherit;
+    }
 
     nav{
       position:fixed;
@@ -64,7 +83,11 @@
       text-decoration:none;
     }
 
-    .nav-logo em,.f-brand em{color:var(--ink-soft);font-style:italic}
+    .nav-logo em,
+    .f-brand em{
+      color:var(--ink-soft);
+      font-style:italic;
+    }
 
     .nav-links{
       display:flex;
@@ -73,7 +96,8 @@
       list-style:none;
     }
 
-    .nav-links a,.nav-cta{
+    .nav-links a,
+    .nav-cta{
       color:var(--ink-mid);
       font-size:12px;
       letter-spacing:.12em;
@@ -82,7 +106,9 @@
       transition:color .2s,opacity .2s;
     }
 
-    .nav-links a:hover{color:var(--ink)}
+    .nav-links a:hover{
+      color:var(--ink);
+    }
 
     .nav-cta{
       border-bottom:1px solid var(--ink);
@@ -90,7 +116,9 @@
       padding-bottom:2px;
     }
 
-    .nav-cta:hover{opacity:.55}
+    .nav-cta:hover{
+      opacity:.55;
+    }
 
     .menu-toggle{
       display:none;
@@ -119,9 +147,12 @@
       border-bottom:1px solid var(--rule);
     }
 
-    .hero-content{max-width:800px}
+    .hero-content{
+      max-width:800px;
+    }
 
-    .hero-kicker,.sec-label{
+    .hero-kicker,
+    .sec-label{
       display:flex;
       align-items:center;
       gap:16px;
@@ -132,7 +163,8 @@
       text-transform:uppercase;
     }
 
-    .hero-kicker::before,.sec-label::before{
+    .hero-kicker::before,
+    .sec-label::before{
       content:"";
       display:block;
       width:32px;
@@ -149,7 +181,11 @@
       line-height:1;
     }
 
-    .hero-h1 em,.band-h em{color:var(--ink-soft);font-style:italic}
+    .hero-h1 em,
+    .band-h em{
+      color:var(--ink-soft);
+      font-style:italic;
+    }
 
     .hero-p{
       max-width:560px;
@@ -161,9 +197,14 @@
       line-height:1.75;
     }
 
-    .hero-actions{display:flex;align-items:center;gap:32px}
+    .hero-actions{
+      display:flex;
+      align-items:center;
+      gap:32px;
+    }
 
-    .btn-dark,.btn-white{
+    .btn-dark,
+    .btn-white{
       display:inline-block;
       padding:13px 30px;
       font-size:12px;
@@ -173,8 +214,15 @@
       transition:opacity .2s;
     }
 
-    .btn-dark{background:var(--ink);color:var(--white)}
-    .btn-dark:hover,.btn-white:hover{opacity:.72}
+    .btn-dark{
+      background:var(--ink);
+      color:var(--white);
+    }
+
+    .btn-dark:hover,
+    .btn-white:hover{
+      opacity:.72;
+    }
 
     .btn-text{
       display:flex;
@@ -188,16 +236,23 @@
       transition:color .2s;
     }
 
-    .btn-text:hover{color:var(--ink)}
+    .btn-text:hover{
+      color:var(--ink);
+    }
 
-    .hero-rule{display:grid;grid-template-columns:repeat(4,1fr)}
+    .hero-rule{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+    }
 
     .hero-stat{
       padding:28px 36px 28px 72px;
       border-right:1px solid var(--rule-light);
     }
 
-    .hero-stat:last-child{border-right:0}
+    .hero-stat:last-child{
+      border-right:0;
+    }
 
     .stat-n{
       margin-bottom:4px;
@@ -213,8 +268,13 @@
       text-transform:uppercase;
     }
 
-    .sec{padding:96px 72px}
-    .sec-alt{background:var(--bg)}
+    .sec{
+      padding:96px 72px;
+    }
+
+    .sec-alt{
+      background:var(--bg);
+    }
 
     .sec-h{
       margin-bottom:16px;
@@ -247,7 +307,9 @@
       border-collapse:collapse;
     }
 
-    .services-table thead tr{border-bottom:1px solid var(--rule)}
+    .services-table thead tr{
+      border-bottom:1px solid var(--rule);
+    }
 
     .services-table th{
       padding:0 0 16px;
@@ -260,9 +322,13 @@
     }
 
     .services-table th:not(:first-child),
-    .service-row td:not(:first-child){padding-left:28px}
+    .service-row td:not(:first-child){
+      padding-left:28px;
+    }
 
-    .service-row{border-bottom:1px solid var(--rule-light)}
+    .service-row{
+      border-bottom:1px solid var(--rule-light);
+    }
 
     .service-row td{
       padding:30px 0;
@@ -271,7 +337,7 @@
 
     .sr-num{
       min-width:36px;
-      padding-top:4px!important;
+      padding-top:4px !important;
       color:var(--ink-muted);
       font-size:14px;
     }
@@ -290,7 +356,9 @@
       line-height:1.7;
     }
 
-    .sr-list{list-style:none}
+    .sr-list{
+      list-style:none;
+    }
 
     .sr-list li{
       display:flex;
@@ -317,7 +385,9 @@
       white-space:nowrap;
     }
 
-    .sr-link:hover{color:var(--ink)}
+    .sr-link:hover{
+      color:var(--ink);
+    }
 
     .principles-grid{
       display:grid;
@@ -331,8 +401,14 @@
       border-right:1px solid var(--rule-light);
     }
 
-    .principle:nth-child(3n){border-right:0;padding-right:0}
-    .principle:nth-child(n+4){border-top:1px solid var(--rule-light)}
+    .principle:nth-child(3n){
+      border-right:0;
+      padding-right:0;
+    }
+
+    .principle:nth-child(n+4){
+      border-top:1px solid var(--rule-light);
+    }
 
     .p-num{
       margin-bottom:24px;
@@ -375,7 +451,9 @@
       line-height:1.02;
     }
 
-    .band-h em{color:rgba(255,255,255,.48)}
+    .band-h em{
+      color:rgba(255,255,255,.48);
+    }
 
     .band-right p{
       margin-bottom:34px;
@@ -384,7 +462,10 @@
       line-height:1.8;
     }
 
-    .btn-white{background:var(--white);color:var(--ink)}
+    .btn-white{
+      background:var(--white);
+      color:var(--ink);
+    }
 
     footer{
       padding:72px 72px 36px;
@@ -407,16 +488,21 @@
       letter-spacing:.06em;
     }
 
-    .f-brand em{color:rgba(255,255,255,.45)}
+    .f-brand em{
+      color:rgba(255,255,255,.45);
+    }
 
-    .f-tagline,.f-col-h{
+    .f-tagline,
+    .f-col-h{
       color:rgba(255,255,255,.28);
       font-size:11px;
       letter-spacing:.16em;
       text-transform:uppercase;
     }
 
-    .f-tagline{margin-bottom:22px}
+    .f-tagline{
+      margin-bottom:22px;
+    }
 
     .f-about{
       max-width:310px;
@@ -425,19 +511,28 @@
       line-height:1.75;
     }
 
-    .f-col-h{margin-bottom:18px}
+    .f-col-h{
+      margin-bottom:18px;
+    }
 
-    .f-col ul{list-style:none}
+    .f-col ul{
+      list-style:none;
+    }
 
-    .f-col li{margin-bottom:10px}
+    .f-col li{
+      margin-bottom:10px;
+    }
 
-    .f-col a,.f-row span:last-child{
+    .f-col a,
+    .f-row span:last-child{
       color:rgba(255,255,255,.52);
       font-size:15px;
       text-decoration:none;
     }
 
-    .f-col a:hover{color:var(--white)}
+    .f-col a:hover{
+      color:var(--white);
+    }
 
     .f-row{
       display:flex;
@@ -461,10 +556,22 @@
       padding-top:30px;
     }
 
-    .footer-bottom p,#clock{
+    .footer-bottom p,
+    #clock{
       color:rgba(255,255,255,.25);
       font-size:12px;
       letter-spacing:.06em;
+    }
+
+    .legal-disclaimer{
+      max-width:1000px;
+      margin:32px auto 0;
+      padding:24px 20px 0;
+      border-top:1px solid rgba(255,255,255,.08);
+      color:rgba(255,255,255,.36);
+      font-size:.8rem;
+      line-height:1.55;
+      text-align:center;
     }
 
     .monogram{
@@ -484,16 +591,42 @@
     }
 
     @media(max-width:1100px){
-      nav,.hero-body,.sec,.band,footer{padding-left:40px;padding-right:40px}
-      .hero-stat{padding-left:40px}
-      .wwd-intro{grid-template-columns:1fr;gap:28px}
-      .band-inner,.footer-top{grid-template-columns:1fr 1fr}
+      nav,
+      .hero-body,
+      .sec,
+      .band,
+      footer{
+        padding-left:40px;
+        padding-right:40px;
+      }
+
+      .hero-stat{
+        padding-left:40px;
+      }
+
+      .wwd-intro{
+        grid-template-columns:1fr;
+        gap:28px;
+      }
+
+      .band-inner,
+      .footer-top{
+        grid-template-columns:1fr 1fr;
+      }
     }
 
     @media(max-width:768px){
-      nav{padding:0 20px}
-      .menu-toggle{display:block}
-      .monogram{display:none}
+      nav{
+        padding:0 20px;
+      }
+
+      .menu-toggle{
+        display:block;
+      }
+
+      .monogram{
+        display:none;
+      }
 
       .nav-links{
         position:absolute;
@@ -509,35 +642,111 @@
         border-bottom:1px solid var(--rule-light);
       }
 
-      .nav-links.is-open{display:flex}
+      .nav-links.is-open{
+        display:flex;
+      }
 
-      .hero-body{padding:64px 20px}
-      .hero-h1{font-size:clamp(48px,14vw,70px)}
-      .hero-p{font-size:17px}
-      .hero-actions{align-items:flex-start;flex-direction:column;gap:22px}
-      .hero-rule{grid-template-columns:1fr 1fr}
-      .hero-stat{padding:24px 20px}
-      .hero-stat:nth-child(2){border-right:0}
-      .hero-stat:nth-child(-n+2){border-bottom:1px solid var(--rule-light)}
+      .hero-body{
+        padding:64px 20px;
+      }
 
-      .sec,.band,footer{padding-right:20px;padding-left:20px}
-      .services-table{display:block;overflow-x:auto}
-      .services-table th,.service-row td{min-width:150px}
-      .services-table th:first-child,.service-row td:first-child{min-width:42px}
-      .services-table th:last-child,.service-row td:last-child{min-width:90px}
-      .sr-name{font-size:22px}
+      .hero-h1{
+        font-size:clamp(48px,14vw,70px);
+      }
 
-      .principles-grid,.band-inner,.footer-top{grid-template-columns:1fr}
-      .principle,.principle:nth-child(n+4){border-top:0;border-right:0;border-bottom:1px solid var(--rule-light)}
-      .principle:last-child{border-bottom:0}
-      .principle:nth-child(3n){padding-right:40px}
-      .principle{padding:36px 0}
+      .hero-p{
+        font-size:17px;
+      }
+
+      .hero-actions{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:22px;
+      }
+
+      .hero-rule{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .hero-stat{
+        padding:24px 20px;
+      }
+
+      .hero-stat:nth-child(2){
+        border-right:0;
+      }
+
+      .hero-stat:nth-child(-n+2){
+        border-bottom:1px solid var(--rule-light);
+      }
+
+      .sec,
+      .band,
+      footer{
+        padding-right:20px;
+        padding-left:20px;
+      }
+
+      .services-table{
+        display:block;
+        overflow-x:auto;
+      }
+
+      .services-table th,
+      .service-row td{
+        min-width:150px;
+      }
+
+      .services-table th:first-child,
+      .service-row td:first-child{
+        min-width:42px;
+      }
+
+      .services-table th:last-child,
+      .service-row td:last-child{
+        min-width:90px;
+      }
+
+      .sr-name{
+        font-size:22px;
+      }
+
+      .principles-grid,
+      .band-inner,
+      .footer-top{
+        grid-template-columns:1fr;
+      }
+
+      .principle,
+      .principle:nth-child(n+4){
+        border-top:0;
+        border-right:0;
+        border-bottom:1px solid var(--rule-light);
+      }
+
+      .principle:last-child{
+        border-bottom:0;
+      }
+
+      .principle:nth-child(3n){
+        padding-right:40px;
+      }
+
+      .principle{
+        padding:36px 0;
+      }
 
       .footer-bottom{
         align-items:center;
         flex-direction:column;
         gap:10px;
         text-align:center;
+      }
+
+      .legal-disclaimer{
+        padding-right:0;
+        padding-left:0;
+        font-size:.75rem;
       }
     }
   </style>
@@ -553,7 +762,12 @@
   <nav aria-label="Main navigation">
     <a class="nav-logo" href="#">CORE<em>FIN</em>CORP</a>
 
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-label="Open navigation"
+    >
       Menu
     </button>
 
@@ -562,7 +776,10 @@
       <li><a href="#principles">Our approach</a></li>
       <li><a href="#footer-contact">Contact</a></li>
       <li>
-        <a class="nav-cta" href="mailto:info@corefincorp.com?subject=Arrange%20a%20meeting">
+        <a
+          class="nav-cta"
+          href="mailto:info@corefincorp.com?subject=Arrange%20a%20meeting"
+        >
           Arrange a meeting
         </a>
       </li>
@@ -588,7 +805,10 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn-dark" href="mailto:info@corefincorp.com?subject=Arrange%20a%20meeting">
+            <a
+              class="btn-dark"
+              href="mailto:info@corefincorp.com?subject=Arrange%20a%20meeting"
+            >
               Arrange a meeting
             </a>
 
@@ -650,11 +870,16 @@
         <tbody>
           <tr class="service-row">
             <td class="sr-num">01</td>
-            <td class="sr-name">Fractional<br>CFO Advisory</td>
+
+            <td class="sr-name">
+              Fractional<br>CFO Advisory
+            </td>
+
             <td class="sr-desc">
               Senior financial leadership on a fractional basis — strategy, cash,
               risk, and stakeholder relations without the full-time overhead.
             </td>
+
             <td>
               <ul class="sr-list">
                 <li>Strategic business planning and goal alignment</li>
@@ -666,8 +891,12 @@
                 <li>Monthly or quarterly board reporting</li>
               </ul>
             </td>
+
             <td>
-              <a class="sr-link" href="mailto:info@corefincorp.com?subject=CFO%20Advisory%20Enquiry">
+              <a
+                class="sr-link"
+                href="mailto:info@corefincorp.com?subject=CFO%20Advisory%20Enquiry"
+              >
                 Contact us
               </a>
             </td>
@@ -675,11 +904,16 @@
 
           <tr class="service-row">
             <td class="sr-num">02</td>
-            <td class="sr-name">FP&amp;A<br>Services</td>
+
+            <td class="sr-name">
+              FP&amp;A<br>Services
+            </td>
+
             <td class="sr-desc">
               Rigorous financial planning, forecasting, and analysis that turns
               your numbers into decisions.
             </td>
+
             <td>
               <ul class="sr-list">
                 <li>Budgeting, forecasting and variance analysis</li>
@@ -690,8 +924,12 @@
                 <li>Month-end management accounts</li>
               </ul>
             </td>
+
             <td>
-              <a class="sr-link" href="mailto:info@corefincorp.com?subject=FP%26A%20Services%20Enquiry">
+              <a
+                class="sr-link"
+                href="mailto:info@corefincorp.com?subject=FP%26A%20Services%20Enquiry"
+              >
                 Contact us
               </a>
             </td>
@@ -699,11 +937,16 @@
 
           <tr class="service-row">
             <td class="sr-num">03</td>
-            <td class="sr-name">Financial<br>Operations</td>
+
+            <td class="sr-name">
+              Financial<br>Operations
+            </td>
+
             <td class="sr-desc">
               Audit-ready, insight-driven bookkeeping — not just compliance,
               but the financial foundation every scaling business needs.
             </td>
+
             <td>
               <ul class="sr-list">
                 <li>Categorised and reconciled transactions</li>
@@ -714,8 +957,12 @@
                 <li>Audit-ready documentation</li>
               </ul>
             </td>
+
             <td>
-              <a class="sr-link" href="mailto:info@corefincorp.com?subject=Financial%20Operations%20Enquiry">
+              <a
+                class="sr-link"
+                href="mailto:info@corefincorp.com?subject=Financial%20Operations%20Enquiry"
+              >
                 Contact us
               </a>
             </td>
@@ -813,7 +1060,10 @@
             opportunities. CoreFinCorp exists to close it.
           </p>
 
-          <a class="btn-white" href="mailto:info@corefincorp.com?subject=CoreFinCorp%20Consultation">
+          <a
+            class="btn-white"
+            href="mailto:info@corefincorp.com?subject=CoreFinCorp%20Consultation"
+          >
             Speak with our team
           </a>
         </div>
@@ -835,6 +1085,7 @@
 
       <div class="f-col">
         <p class="f-col-h">Services</p>
+
         <ul>
           <li><a href="#what-we-do">Fractional CFO Advisory</a></li>
           <li><a href="#what-we-do">FP&amp;A Services</a></li>
@@ -844,10 +1095,15 @@
 
       <div class="f-col">
         <p class="f-col-h">Navigate</p>
+
         <ul>
           <li><a href="#what-we-do">Advisory</a></li>
           <li><a href="#principles">Our approach</a></li>
-          <li><a href="mailto:info@corefincorp.com?subject=Contact%20CoreFinCorp">Contact</a></li>
+          <li>
+            <a href="mailto:info@corefincorp.com?subject=Contact%20CoreFinCorp">
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -857,7 +1113,9 @@
         <div class="f-row">
           <span>Email</span>
           <span>
-            <a href="mailto:info@corefincorp.com">info@corefincorp.com</a>
+            <a href="mailto:info@corefincorp.com">
+              info@corefincorp.com
+            </a>
           </span>
         </div>
 
@@ -877,10 +1135,19 @@
       <p>&copy; 2026 CoreFinCorp · Ambala, Haryana, India</p>
       <span id="clock" aria-hidden="true"></span>
     </div>
+
+    <p class="legal-disclaimer">
+      Corefincorp is a commercial brand name under which Hinokiview Partners LLP
+      markets and delivers its professional services. All legal engagements,
+      professional contracts, and financial transactions, including billing and
+      payments, are executed exclusively in the legal name of Hinokiview Partners LLP.
+      Hinokiview Partners LLP is not a registered CA firm and does not provide public
+      accounting or attest services.
+    </p>
   </footer>
 
   <script>
-    // filename: corefincorp.js | Code Generated by Sidekick is for learning and experimentation purposes only.
+    // Code Generated by Sidekick is for learning and experimentation purposes only.
 
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
